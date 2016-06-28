@@ -32,7 +32,7 @@
     [self.collectionView registerNib:[UINib nibWithNibName:@"ZJLCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"my_cell"];
     self.slider = [[UISlider alloc] initWithFrame:CGRectMake(0, (ScreenWidth-200)/2, 200, 50)];
     self.slider.minimumValue = 0;
-    self.slider.maximumValue = (self.collectionView.bounds.size.height-self.layout.itemSize.height)/2;
+    self.slider.maximumValue = 100;
     self.slider.value = 0;
     [self.slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:self.slider];
